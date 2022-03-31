@@ -55,4 +55,20 @@
   top: calc(var(--header-height) + 1rem); //4 rem
 }
 
+/* Active link */
+.active-link{
+  position: relative;
+
+  &::before{
+      content: '';
+      position: absolute;
+      bottom: -.75rem;
+      left: 45%;
+      width: 6px;
+      height: 6px;
+      background-color: var(--first-color);
+      border-radius: 50%;
+  }
+}
+
 /* Change background header */

@@ -187,6 +187,22 @@ img {
   top: calc(var(--header-height) + 1rem);
 }
 
+/* Active link */
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: '';
+  position: absolute;
+  bottom: -.75rem;
+  left: 45%;
+  width: 6px;
+  height: 6px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
 /* Change background header */
 /*=============== HOME ===============*/
 .home__container {
