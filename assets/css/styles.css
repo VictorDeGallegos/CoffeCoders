@@ -101,6 +101,7 @@ img {
   color: var(--title-color);
   text-align: center;
   margin-bottom: var(--mb-1);
+  font-weight: var(--font-bold);
 }
 
 .svg__color {
@@ -243,6 +244,14 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+  gap: 2.5rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
 /*=============== MISION ===============*/
 /*=============== VISION ===============*/
 /*=============== PROYECTOS ===============*/
