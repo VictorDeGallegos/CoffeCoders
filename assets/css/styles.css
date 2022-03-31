@@ -253,6 +253,14 @@ img {
 }
 
 /*=============== MISION ===============*/
+.mision__container {
+  gap: 2.5rem;
+}
+
+.mision__data {
+  text-align: center;
+}
+
 /*=============== VISION ===============*/
 /*=============== PROYECTOS ===============*/
 /*=============== DEVELOPERS ===============*/
