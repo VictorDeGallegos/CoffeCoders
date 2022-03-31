@@ -262,6 +262,14 @@ img {
 }
 
 /*=============== VISION ===============*/
+.vision__container {
+  gap: 2.5rem;
+}
+
+.vision__data {
+  text-align: center;
+}
+
 /*=============== PROYECTOS ===============*/
 /*=============== DEVELOPERS ===============*/
 /*=============== CONTACT ===============*/
