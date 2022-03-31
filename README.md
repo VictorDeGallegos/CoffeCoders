@@ -20,3 +20,11 @@
 
 - **Victor Hugo Gallegos Mota** - *Trabajo Inicial* - [VictorDeGallegos](https://github.com/VictorDeGallegos)
 - **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+
+## Capturas de pantalla 📸
+
+![Preview1](/preview1.png)
+![Preview2](/preview2.png)
+![Preview3](/preview3.png)
+![Preview4](/preview4.png)
+![Preview5](/preview5.png)
