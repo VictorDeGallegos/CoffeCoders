@@ -57,7 +57,34 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp);
 /*=============== DARK LIGHT THEME ===============*/
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'bx-toggle-right';
 
+// Tema seleccionado previamente (si seleccionó el usuario)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// Obtenemos el tema actual que la interfaz tiene validando la clase de tema oscuro
+const getCurrentTheme = () => (document.body.classList.contains(darkTheme) ? 'dark' : 'light');
+const getCurrentIcon = () => (themeButton.classList.contains(iconTheme) ? 'bx-toggle-left' : 'bx-toggle-right');
+
+// Validamos si el usuario eligió previamente un tema.
+if (selectedTheme) {
+  // Si se cumple la validación, le preguntamos cuál era el problema saber si nos activamos o desactivamos la oscuridad.
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+  themeButton.classList[selectedIcon === 'bx-toggle-left' ? 'add' : 'remove'](iconTheme);
+}
+
+// Activar / desactivar el tema manualmente con el botón.
+themeButton.addEventListener('click', () => {
+  // Añadir o quitar el tema oscuro / icono
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  // Salvamos el tema y el icono actual que el usuario eligió.
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
+});
 /*=============== SLIDE DEVELOPERS ===============*/
 (function () {
   const sliders = [...document.querySelectorAll('.testimony__body')];
