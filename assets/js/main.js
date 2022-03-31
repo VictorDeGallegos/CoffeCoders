@@ -49,7 +49,13 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader);
 /*=============== SHOW SCROLL UP ===============*/
-
+function scrollUp() {
+  const scrollUp = document.getElementById('scroll-up');
+  // Cuando el pergamino es superior a 560 altura de la vista, agregue la clase de show-scroll a la etiqueta A con la clase Scroll-Top
+  if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+  else scrollUp.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollUp);
 /*=============== DARK LIGHT THEME ===============*/
 
 /*=============== SLIDE DEVELOPERS ===============*/
