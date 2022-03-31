@@ -270,6 +270,15 @@ img {
   text-align: center;
 }
 
+/*=============== VALORES ===============*/
+.valores__container {
+  gap: 2.5rem;
+}
+
+.valores__data {
+  text-align: center;
+}
+
 /*=============== PROYECTOS ===============*/
 /*=============== DEVELOPERS ===============*/
 /*=============== CONTACT ===============*/
